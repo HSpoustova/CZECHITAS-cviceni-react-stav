@@ -7,7 +7,7 @@ import './zarovka.css';
 // Zadání 2: Po kliku na tlačítko `vypnout` zhasněte.
 
 export const Uloha1 = () => {
-  const [jeZapnuta, setJeZapnuta] = useState(false)
+  const [jeZapnuta, setJeZapnuta] = useState(false);
 
   return (
     <div className="zarovka">
@@ -19,10 +19,18 @@ export const Uloha1 = () => {
         className="zarovka__ikona"
       />
       <div className="zarovka__tlacitka">
-        <button className="zarovka__tlacitko" disabled={jeZapnuta}>
+        <button
+          className="zarovka__tlacitko"
+          disabled={jeZapnuta}
+          onClick={() => setJeZapnuta(true)}
+        >
           zapnout
         </button>
-        <button className="zarovka__tlacitko" disabled={!jeZapnuta}>
+        <button
+          className="zarovka__tlacitko"
+          disabled={!jeZapnuta}
+          onClick={() => setJeZapnuta(false)}
+        >
           vypnout
         </button>
       </div>
