@@ -6,7 +6,7 @@ import { Uloha5 } from '../../components/Uloha5';
 import './style.css';
 
 export const HomePage = () => (
-  <div className='container'>
+  <div className="container">
     <h1>React stav</h1>
     <h2>Úloha 1</h2>
     <Uloha1 />
